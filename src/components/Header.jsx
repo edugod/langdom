@@ -1,22 +1,31 @@
 import React from 'react'
 import Logo from '../assets/logocropped.png'
 
+
 const Header = () => {
-	return (
+  
+  const navLinks = document.querySelector('.nav-links') 
+  function onToggleMenu(e) {
+    e.name = e.name === 'menu' ? 'close' : 'menu'
+    navLinks.classList.toggle('[top-[9%]')
+  }
+
+
+  return (
 		<header className='bg-primary text-white'>
-			<nav className=' flex justify-between items-center w-[85%] mx-auto'>
+        <nav className="flex justify-between items-center w-[92%]  mx-auto">
 				<div>
-					<img className='w-16' src={Logo}></img>
+					<img className='w-16 cursor-pointer' src={Logo} alt='logo'></img>
 				</div>
-				<div className=' absolute'>
-					<ul className=' flex md:flex-row items-center gap-[4vw]'>
+				<div className="nav-links duration-500 md:static absolute bg-black md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">
+					<ul className="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
 						<li><a href='#' className='hover:text-tertiary'>Cursos</a></li>
 						<li><a href="#" className="hover:text-tertiary">Modalidades</a></li>
 						<li><a href="#" className="hover:text-tertiary">Contato</a></li>
 						<li><a href="#" className="hover:text-tertiary">Intercâmbistas!</a></li>
 					</ul>
 				</div>
-        <div>
+        <div className='flex items-center gap-6'>
           <button className='bg-secondary text-white px-3 py-1 rounded-full hover:bg-tertiary'>Saiba Mais!</button>
         </div>
 			</nav>
