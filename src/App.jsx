@@ -8,7 +8,7 @@ function App() {
     <>
     <Header />
       <div>
-        <h1 className="bg-primary">Testando</h1>
+        <h1 className="bg-secondary">Testando</h1>
       </div>
       <Footer />
     </>
