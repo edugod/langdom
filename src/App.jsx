@@ -1,18 +1,16 @@
-// App.js
-import React from "react";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
+import React from 'react'
+import { AppRoutes } from './routes'
+import Header from './components/Header'
+import Footer from './components/Footer'
 
-function App() {
-  return (
-    <>
-    <Header />
-      <div>
-        <h1 className="bg-secondary">Testando</h1>
-      </div>
-      <Footer />
-    </>
-  );
+const App = () => {
+	return (
+		<div>
+			<Header />
+			<AppRoutes />
+			<Footer />
+		</div>
+	)
 }
 
-export default App;
+export default App
