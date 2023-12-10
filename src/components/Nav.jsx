@@ -32,11 +32,8 @@ const Nav = () => {
 				>
 					<ion-icon name={open ? 'close' : 'menu'}></ion-icon>
 				</div>
-				<ul
-					className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${
-						open ? 'top-20 opacity-100 bg-primary' : 'top-[-490px]'
-					}`}
-				>
+				<ul className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${
+						open ? 'top-20 opacity-100 bg-primary' : 'top-[-490px]'}`}>
 					<NavigationLink to='/courses'>Cursos</NavigationLink>
 					<NavigationLink to='/exchange'>Intercâmbistas</NavigationLink>
 					<NavigationLink to='/tobacco'>Tobacco</NavigationLink>
