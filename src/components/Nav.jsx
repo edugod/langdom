@@ -45,4 +45,6 @@ const Nav = () => {
 	)
 }
 
+console.log('desistir jamais')
+
 export default Nav
