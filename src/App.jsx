@@ -1,12 +1,12 @@
 import React from 'react'
 import { AppRoutes } from './routes'
 import Footer from './components/Footer'
-import Nav from './components/Nav'
+import NewNav from './components/NewNav'
 
 const App = () => {
 	return (
 		<>
-			<Nav />
+			<NewNav />
 			<div className='bg-offwhite w-full h-screen'>
 				<AppRoutes />
 				<Footer />

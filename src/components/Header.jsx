@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Logo from '../assets/logocropped.png';
 
 const NavigationLink = ({ to, children }) => (
   <li>
@@ -16,7 +15,7 @@ const Header = () => {
       <nav className="flex justify-between items-center w-[66%] mx-auto">
         <div>
           <Link to="/">
-          <img className="md:w-20 w-16 cursor-pointer p-2" src={Logo} alt="logo" />
+          {/* <img className="md:w-20 w-16 cursor-pointer p-2" src={Logo} alt="logo" /> */}
           </Link>
         </div>
         <div className="nav-links absolute bg-black min-h-[60vh] left-0 top-full md:static md:min-h-fit md:w-auto w-full flex items-center px-5">
